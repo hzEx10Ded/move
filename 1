@@ -1,0 +1,11 @@
+module IPX::LendingPool {
+  struct Loan {
+    collateral: Coin,
+    debt: u128,
+  }
+
+  public borrow(collateral: Coin, amount: u128) {
+    assert!(amount > 0, "Amount must be positive.");
+    // Add borrowing logic
+  }
+}
